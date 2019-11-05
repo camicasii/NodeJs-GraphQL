@@ -7,8 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d lib --source-maps",
     "start": "nodemon ./src/index.js --exec babel-node ",
-    "serve":"node /lib/index.js"
-    },
+    "serve": "node /lib/index.js",
+    "clean":"rimraf lib"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -16,7 +17,8 @@
     "@babel/polyfill": "^7.7.0",
     "express": "^4.17.1",
     "express-graphql": "^0.9.0",
-    "graphql": "^14.5.8"
+    "graphql": "^14.5.8",
+    "rimraf": "^3.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.0",
